@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscas</title>
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+
+<body>
+    <header>
+        <menu>
+            <img src="" alt="">
+            <a href="index.html">Home</a>
+            <a href="#">Gerar Tokens</a>
+
+        </menu>
+    </header>
+
+    <h1>Consuta de todo Brasil</h1>
+    <form action="#" method="get">
+        
+        <div id="inivel">
+            <legend><span class="lg" id="qual">Qual  nível de sua pesquisa:</span></legend>
+            
+                
+                <input type="radio" value="basico" name="nivel" id="inivelb" class="opnivelr"  onclick="selecionar('divb')">
+                <label for="inivelb">
+                <div class="opnivel" id="divb">
+                        <h3>Consulta básica</h3>
+                        <ul>
+                            <li>Nome completo</li>
+                            <li>CPF</li>
+                            <li>Endereço</li>
+                            <li>CNS</li>
+                            <li>Telefone</li>
+                        </ul>
+                    </div>
+                </label>
+                    </input>
+                
+                <input type="radio" value="veiculo" name="nivel" id="inivelv" class="opnivelr" onclick="selecionar('divv')" >
+                <label for="inivelv">
+                <div class="opnivel" id="divv">
+                    <h3>Consulta Veículo</h3>
+                    <ul>
+                        <li>Placa</li>
+                        <li>Chassi</li>
+                        <li>CPF</li>
+                        <li>CNS</li>
+                        <li>Telefone</li>
+                    </ul>
+                    </div>
+                </label>
+                        </input>
+                <input type="radio" value="completo" name="nivel" id="inivelc" class="opnivelr" onclick="selecionar('divc') ">
+                    <label for="inivelc">
+                        <div class="opnivel" id="divc">
+                            <h3>Consulta completa</h3>
+                            <ul>
+                                <li>Nome completo</li>
+                                <li>CPF</li>
+                                <li>Endereço</li>
+                                <li>CNS</li>
+                                <li>Telefone</li>
+                
+                            </ul>
+                        </div>
+                    </label>
+                    <div class="bt"><a id='linkb'href="#" target="_blank"><button type="button" id="tk">Gerar Tokens</button></a></div>
+                    <div class="bt"><button type="button" onclick="dados()" id="dd">CONTINUAR</button></div>
+                        </div>
+                    
+        
+
+       
+        
+    <div id="op_b">
+        <fieldset>
+        <legend><span class="lg">Consulta básica</span></legend>
+            
+            <select name="modo" id="imodo_b"  onchange="val()" class="sl">
+            <option value="CPF" name="cpf" onchange="nome('cpf')">CPF</option>
+            <option value="RG" name="rg" onchange="nome('rg')">RG</option>
+            <option value="Nome" name="nome" onchange="nome('nome')">Nome completo</option>
+            <option value="DDD+Numero " name="numero" onchange="nome('numero')">Número de telefone</option>
+            </select> <br>
+            <input type="text"  id="imodo_bt" class="sl"><br>
+            <label for="token">Token:</label>
+            <input type="text" id="token" class="sl">
+        </fieldset>
+    </div>
+
+        <div id="op_v">
+            <fieldset>
+                <legend><span class="lg">Consulta veículo</span></legend>
+                <select name="modo" id="imodo_v" class="sl">
+                    <option value="placa">Placa</option>
+                    <option value="cpf">CPF</option>
+                    <option value="chassi">Chassi</option>
+                    <option value="motor">Motor</option>
+                    <input type="text" class="sl" name="veiculo">
+                </select><br>
+                <label for="token">Token:</label>
+                <input type="text" id="token" class="sl">
+            </fieldset>
+        </div>
+
+        <div id="op_c" class=>
+            <fieldset>
+                <legend><span class="lg">Consulta completa</span></legend>
+                <label for="icpf">CPF:</label>
+                <input type="text" maxlength="11" pattern="[0-9]" name="cpf" class="sl"><br>
+                <label for="token">Token:</label>
+                <input type="text" id="token" class="sl">
+            </fieldset>
+        </div>
+        <div id="subm"><input type="submit" value="CONSULTAR" id="submit"></div>
+    </form>
+
+</body>
+</html>
+<script src="script.js"></script>

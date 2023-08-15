@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Token</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #qt{
+            width: 35px;
+            text-align: center;
+            font-weight: bolder ;
+            color :white;
+            background-color: transparent;
+            border: none;
+            font-size: 1em;
+        }
+
+        #num{
+            width: 120px;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        div{
+            margin-bottom: 50px;
+
+        }
+        #vl{
+        padding: 8px;
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+        }
+        button{
+        text-align: center;
+    
+        width: 30px;
+    
+        color: white;
+        background-color: black;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: white;
+        border-width: 1px;
+        font-weight: bolder;
+        font-size: 1em;
+        margin: auto;
+            
+        }
+        button:hover,#pix:hover{
+            background-color: white;
+            color:black;
+            transition: 0.8s;
+        }
+        #pix{
+            text-align: center;
+            padding: 5px;
+    
+        width: 150px;
+    
+        color: white;
+        background-color: black;
+        border-radius: 15px;
+        border-style: solid;
+        border-color: white;
+        border-width: 4px;
+        font-weight: bolder;
+        font-size: 1em;
+        margin: auto;
+            
+
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <h1>Consulta Veículo</h1>
+
+    <div>
+        <fieldset>
+            <form action="">
+                <div>
+                    <label for="qt" value=>R$ 3,90 Un X</label>
+                    <input type="number" id="qt" name="quantidade" value="1" oninput="cal()" onblur="clikout()" min="1" step="1" >Token(s)
+                    <button type="button" onclick="soma('1')">+</button>
+                    <button type="button" onclick="soma('-1')">-</button>
+                </div>
+                <div><span id="vl">Total:<span id="tt">R$ 3,90</span></span></div>
+                
+                <div>
+                    <label for="num" class="num">Celular:</label>
+                    <input type="tel" name="numero" id="num" placeholder="Ex:(011)912345678">
+                </div>
+                <button id="pix" type="button">Pagar com PIX</button>
+            </form>
+        </fieldset>
+    </div>
+
+    
+</body>
+</html>
+<script>
+
+    function cal(){
+        var qt=Number(document.getElementById("qt").value);
+        qt=Math.round(qt);
+       
+        
+       
+        document.getElementById("qt").value=qt;
+    
+        
+
+        var total=qt*3.9
+        total= total.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
+        document.getElementById("tt").innerText=String(total);
+        
+
+    }
+    function soma(n){
+
+        x=Number(document.getElementById('qt').value);
+        x=x+Number(n);
+        if(x<=0){
+            x=1
+        }
+        document.getElementById('qt').value=String(x);
+        cal();
+
+    }
+
+    function clikout(){
+        var qt=Number(document.getElementById("qt").value);
+        if(qt<=0){
+            
+            qt=1;
+            document.getElementById("qt").value=qt;
+            cal();
+        
+            
+            
+        }
+       
+    }
+
+</script>

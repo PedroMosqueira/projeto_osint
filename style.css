@@ -1,0 +1,213 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+menu{
+    text-align: left;
+    font-size: 0.8em;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+    padding: 4px;
+    border-radius: 10px;
+
+
+}
+
+a:hover{
+    background-color: white;
+    color: black;
+
+
+
+
+}
+h1{
+    text-align: center;
+}
+
+#inivel{
+    text-align: center;
+    vertical-align: top;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+
+.opnivel{
+    display: inline-block;
+    text-align: center;
+    width: 20vw;
+    background-color: rgba(255, 255, 255, 0.062);
+    color: white;
+    padding: 12px;
+    
+    border-radius: 20px;
+    border-width: 5px;
+    border-color: white;
+    border-style: solid;
+    margin-top: 20px;
+    vertical-align: top;
+    margin: 10px;
+
+    
+    
+
+}
+
+.opnivel:hover{
+    margin-top: -1px;
+    transition: 0.5s;
+
+}
+.opnivelr{
+    display: none;
+}
+
+.bt{
+
+margin-top: 12px;
+}
+#dd{
+    display: none;
+    text-align: center;
+    margin-top: 40px;
+   width: 200px;
+    height: 50px;
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: white;
+    border-width: 4px;
+    font-weight: bolder;
+    margin: auto;
+}
+#dd:hover{
+    background-color: white;
+    color:black;
+    transition: 0.8s;
+}
+
+#tk{
+    display: none;
+    text-align: center;
+    margin-top: 40px;
+   width: 200px;
+    height: 50px;
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: white;
+    border-width: 4px;
+    font-weight: bolder;
+    margin: auto;
+
+}
+
+#tk:hover{
+    background-color: white;
+    color:black;
+    transition: 0.8s;
+
+
+
+}
+
+#linkb{
+    padding: 0;
+
+
+}
+fieldset{
+    display: inline;
+    text-align: center;
+    width: 300px;
+    border-radius: 15px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.062);
+
+    
+}
+
+.lg{
+
+    color:black;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: bolder;
+
+}
+#op_b{
+    display: none;
+    text-align: center;
+    
+    margin: auto;
+    margin-top: 50px;
+
+}
+.sl{
+    width: 150px;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 5px;
+}
+#op_v{
+    display: none;
+    text-align: center;
+    
+    margin: auto;
+    margin-top: 50px;
+}
+#op_c{
+    display: none;
+    text-align: center;
+    
+    margin: auto;
+    margin-top: 50px;
+}
+#subm{
+    display: none;
+    text-align: center;
+
+}
+#submit{
+
+    display: inline;
+    text-align: center;
+    margin-top: 40px;
+   width: 200px;
+    height: 50px;
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: white;
+    border-width: 4px;
+    font-weight: bolder;
+    margin: auto;
+}
+#submit:hover{
+    background-color: white;
+    color:black;
+    transition: 0.5s;
+}
+#qual{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+    
+    
+
+
+
+
