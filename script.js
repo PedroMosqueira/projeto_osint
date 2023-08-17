@@ -29,6 +29,12 @@ function desm(){
     document.getElementById("divc").style.backgroundColor='rgba(255, 255, 255, 0.062)';
     document.getElementById("divc").style.color='white';
 
+    if (window.innerWidth<=600){
+        document.getElementById('centrob').style.display='none';
+        document.getElementById('centrov').style.display='none';
+        document.getElementById('centroc').style.display='none';
+    }
+
 
 
 
@@ -63,7 +69,27 @@ function selecionar(id){
             break;
 
  
-    }
+    }  
+    if (window.innerWidth<=600){
+    switch(id){
+
+        case 'divb':
+            document.getElementById('centrob').style.display='block';
+            break;
+        
+        case 'divv' :
+            document.getElementById('centrov').style.display='block';
+            break;
+        case 'divc' :
+            document.getElementById('centroc').style.display='block';
+            break;
+
+ 
+    }  
+
+}
+}
+    
 
     
 
@@ -72,7 +98,7 @@ function selecionar(id){
 
 
 
-}
+
 
 function dados(){
 
@@ -99,7 +125,6 @@ function dados(){
 }
 
 }
-
 
 
 

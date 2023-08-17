@@ -59,12 +59,14 @@ h1{
     
 
 }
-
 .opnivel:hover{
-    margin-top: -1px;
+    margin-top: 1px;
     transition: 0.5s;
-
 }
+
+
+
+
 .opnivelr{
     display: none;
 }
@@ -202,6 +204,9 @@ fieldset{
 #qual{
     margin-bottom: 20px;
     margin-top: 20px;
+}
+#centro{
+    display: none;
 }
 
 
